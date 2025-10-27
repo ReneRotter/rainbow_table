@@ -1,9 +1,5 @@
-# rainbow-table
-Language de programmation : C
-=======
 # **👷🏻 Crée ta propre Rainbow Table 🌈**
 ## **Découvre comment créer ta table de correspondance à l'aide d'un dictionnaire et de Docker!**
----
 
 - [**Pré-requis**](#pré-requis)
 	- [1. Docker](#1-docker)
