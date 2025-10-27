@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # rainbow-table
 Language de programmation : C
 =======
@@ -155,5 +154,3 @@ make generate DICO=<nom_du_dictionnaire.txt- TABLE=<nom_de_table.t3c-
 ```bash
 make lookup TABLE=<nom_de_table.t3c- HASH=<nom_de_ton_hash.txt-
 ```
-
->>>>>>> f0355ac (Initial commit : je vous prie de m'excuser pour le retard)
