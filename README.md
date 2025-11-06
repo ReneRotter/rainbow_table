@@ -62,7 +62,7 @@ git --version
 
 ```bash
 cd ~/Desktop/
-mkir -p Projet/
+mkdir -p Projet/
 ```
 - Clone le répertoire avec l'URL affiché en haut
 
@@ -138,7 +138,7 @@ make lookup
 - Attentions les documents doivent être placé à minima à la racine du dossier rainbow_table/
 - Tu peux entrer en ligne de commande le dictionnaire et la table de corresponsance avec la commande :
 ```bash
-make generate DICO=<nom_du_dictionnaire.txt- TABLE=<nom_de_table.t3c-
+make generate DICO=<nom_du_dictionnaire.txt> TABLE=<nom_de_table.t3c>
 ```
 
 ### 2. Personnalisation du mode Lookup en ligne de commande 
@@ -148,5 +148,5 @@ make generate DICO=<nom_du_dictionnaire.txt- TABLE=<nom_de_table.t3c-
 - Tu peux entrer en ligne de commande la table et le document de hash avec la commande :
 
 ```bash
-make lookup TABLE=<nom_de_table.t3c- HASH=<nom_de_ton_hash.txt-
+make lookup TABLE=<nom_de_table.t3c> HASH=<nom_de_ton_hash.txt>
 ```

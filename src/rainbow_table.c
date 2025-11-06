@@ -95,8 +95,13 @@ int lookup(char *table, char *hashes) { //2 paramètres pointeurs vers les fichi
             HashText *hash2 = realloc(hash1, tableSize * sizeof(HashText));//Et on alloue dynamiquement la mémoire
             if (hash2 == NULL) {
                 perror("realloc");
-                free(linePtr);
-                fclose(open);
+                for (size_t k = 0; k < lineCount; k++) { //pour chaque ligne parcouru
+                    free(hash1[k].text); //on libere les hash copiés
+                    free(hash1[k].hash); //et les texts copiés
+                }
+                free(hash1); //on libere le pointeur vers structure
+                free(linePtr); //le pointeur buffer
+                fclose(open); //et on ferme le fichier
                 return 1;
             }
             hash1 = hash2;
