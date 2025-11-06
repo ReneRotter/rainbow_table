@@ -104,7 +104,7 @@ int lookup(char *table, char *hashes) { //2 paramètres pointeurs vers les fichi
                 fclose(open); //et on ferme le fichier
                 return 1;
             }
-            hash1 = hash2;
+            hash1 = hash2; 
         }
 
         char *text = tab + 1; //on défini un pointeur qui pointe vers le text clair apres le tab
